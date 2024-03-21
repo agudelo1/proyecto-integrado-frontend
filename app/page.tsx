@@ -10,8 +10,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>
-      <main className="flex flex-col items-center justify-center w-full flex-1 px-4 sm:px-6 lg:px-8 text-center">
-        <div className="bg-white rounded-2xl shadow-2xl w-full sm:max-w-4xl flex flex-col sm:flex-row">
+      <main className="flex flex-col items-center justify-center w-full flex-1 px-4 sm:px-6 lg:px-8 text-center ">
+        <div className="bg-white  shadow-2xl w-full sm:max-w-4xl flex flex-col sm:flex-row rounded-2xl">
           <div className="w-full sm:w-3/5 p-5">
             <div className="text-left font-bold text-2xl">
               <span className="text-green-500">Deli</span>Dash
@@ -61,7 +61,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="w-full sm:w-2/5 bg-green-500 text-white rounded-tr-2xl rounded-br-2xl py-12 px-4 sm:py-36 sm:px-12">
+          <div className="w-full sm:w-2/5 bg-green-500 text-white   py-12 px-4 sm:py-36 sm:px-12">
             <h2 className="text-3xl font-bold mb-2 ">Hello, Friend!</h2>
             <div className="border-2 w-10 border-white inline-block mb-2"></div>
             <p className="mb-5 sm:mb-10">
