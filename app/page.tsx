@@ -1,16 +1,18 @@
 import Image from "next/image";
 import { FaRegUser, FaRegEnvelope } from "react-icons/fa";
 import { MdLockOutline } from "react-icons/md";
+
 export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen py-2 bg-gray-100">
       <head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>
-      <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
-        <div className="bg-white rounded-2xl shadow-2xl flex w-2/3 max-w-4xl">
-          <div className="w-3/5 p-5">
+      <main className="flex flex-col items-center justify-center w-full flex-1 px-4 sm:px-6 lg:px-8 text-center">
+        <div className="bg-white rounded-2xl shadow-2xl w-full sm:max-w-4xl flex flex-col sm:flex-row">
+          <div className="w-full sm:w-3/5 p-5">
             <div className="text-left font-bold text-2xl">
               <span className="text-green-500">Deli</span>Dash
             </div>
@@ -25,7 +27,7 @@ export default function Home() {
                 </span>
               </div>
               <div className="flex flex-col items-center ">
-                <div className="bg-gray-100 w-64 p-2 flex items-center mb-3">
+                <div className="bg-gray-100 w-full sm:w-64 p-2 flex items-center mb-3">
                   <FaRegEnvelope className="text-gray-400 mr-2" />
                   <input
                     type="email"
@@ -35,7 +37,7 @@ export default function Home() {
                     className="bg-gray-100 outline-none text-sm flex-1"
                   />
                 </div>
-                <div className="bg-gray-100 w-64 p-2 flex items-center mb-1">
+                <div className="bg-gray-100 w-full sm:w-64 p-2 flex items-center mb-1">
                   <MdLockOutline className="text-gray-400 mr-2" />
                   <input
                     type="password"
@@ -45,7 +47,7 @@ export default function Home() {
                     className="bg-gray-100 outline-none text-sm flex-1"
                   />
                 </div>
-                <div className="flex justify-between w-64 mb-5">
+                <div className="flex justify-between w-full sm:w-64 mb-5">
                   <a href="#" className="text-xs text-gray-400">
                     Forgot Password?
                   </a>
@@ -59,10 +61,10 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="w-2/5 bg-green-500 text-white rounded-tr-2xl rounded-br-2xl py-36 px-12">
+          <div className="w-full sm:w-2/5 bg-green-500 text-white rounded-tr-2xl rounded-br-2xl py-12 px-4 sm:py-36 sm:px-12">
             <h2 className="text-3xl font-bold mb-2 ">Hello, Friend!</h2>
             <div className="border-2 w-10 border-white inline-block mb-2"></div>
-            <p className="mb-10">
+            <p className="mb-5 sm:mb-10">
               Fill up personal information and start journey with us.
             </p>
             <a
